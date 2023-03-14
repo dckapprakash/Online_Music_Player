@@ -1,0 +1,175 @@
+body {
+    /* background-color: rgb(20, 142, 163); */
+    background-image: url(./img/retro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Roboto, ;
+}
+
+.container {
+    background-color: rgb(233, 222, 220);
+    margin: auto;
+    width: 300px;
+    height: 550px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 5px #6fe0e0;
+
+}
+
+
+.player {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+
+.track-art {
+    margin: 25px;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 6px solid rgb(0, 153, 255);
+
+
+}
+
+.track-art1 {
+    animation: rotate 18s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.now-playing {
+    font-size: 35px;
+}
+
+
+.track-name {
+    font-size: 27px;
+}
+
+
+.track-artist {
+    font-size: 20px;
+    color: rgb(104, 212, 41);
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+
+}
+
+
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+    color: rgb(98, 102, 102);
+}
+
+
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 45px;
+}
+
+
+.seek_slider,
+.volume_slider {
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+.seek_slider {
+    width: 60%;
+}
+
+.volume_slider {
+    width: 30%;
+    margin-top: 10px;
+}
+
+.current-time,
+.total-duration {
+    padding: 5px;
+}
+
+i.fa-solid fa-volume-high,
+i.fa-solid fa-volume-low {
+    padding: 20px;
+}
+
+
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+    cursor: pointer;
+}
+
+.pause {
+    display: none;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+}
